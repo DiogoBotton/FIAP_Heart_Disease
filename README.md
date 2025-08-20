@@ -9,7 +9,7 @@
 <br>
 
 # Nome do projeto
-A fazer...
+Batimentos de Dados – Mapeando o Coração Moderno
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/bryanjfagundes/">Bryan Fagundes</a>
@@ -26,18 +26,54 @@ A fazer...
 
 ## 📜 Descrição
 
-A fazer...
+Neste primeiro desafio temos como objetivo pesquisar e reunir algumas bases de dados numéricos e de imagens, assim como, artigos médicos sobre doenças cardíacas para posteriormente realizarmos a criação de modelos de Machine Learning e Aprendizado Profundo.
 
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>src</b>: Todo o código fonte criado, inclusive, com as descrições / justificativas sobre os datasets utilizados.
+- <b>src</b>: Todo o código fonte criado (futuramente).
 - <b>docs</b>: Artigos médicos.
 
-## 🔧 Como executar o código
+## 📋 Descrição dos datasets reunidos
 
-A fazer...
+**Datasets numéricos:**
+
+Encontramos 2 datasets que poderiam ser interessantes para suprir essa necessidade:
+
+- [Framingham Heart Study](https://www.kaggle.com/datasets/noeyislearning/framingham-heart-study)
+- [ECG Arrhythmia Classification Dataset](https://www.kaggle.com/datasets/sadmansakib7/ecg-arrhythmia-classification-dataset)
+
+O **1° dataset (Framingham Heart Study)** é um estudo cardiovascular em andamento em Framingham, Massachusetts. Se trata de um dataset com dados reais de pacientes e tem como objetivo realizar uma predição de risco de uma pessoa ter a doença cardíaca coronária (DCC) em até 10 anos com base em vários atributos que indicam o estado de saúde do paciente.
+
+As variáveis mais relevantes deste dataset seriam, basicamente, as informações que tem mais correlação com hábitos e saúde do paciente, como por exemplo, indicação se o paciente é fumante e número de cigarros por dia, se o paciente tem diabetes, pressão arterial, colesterol total, HDL, idade, etc. Estas variáveis serão importantes para definir se uma pessoa tem o risco de ter a doença cardíaca coronária em até 10 anos. Com este resultado em mãos os médicos poderiam recomendar os devidos cuidados com a saúde do paciente, visando evitar que realmente o mesmo tenha essa doença futuramente. A coluna *"TenYearCHD"* é responsável por indicar o risco da doença cardíaca coronária no paciente.
+
+O **2° dataset (ECG Arrhythmia Classification Dataset)** se trata de uma base com dados reais que tem como origem dados obtidos do Physionet, onde há quatro conjuntos de dados de arritmia de exames de Eletrocardiograma (ECG) padronizados com as mesmas colunas para serem compatíveis entre si ao aplicar modelos de aprendizado de máquina.
+
+Dentre as variáveis deste dataset, a coluna *"type"* contém a informação do tipo de arritmia detectada no paciente baseada nos sinais do exame ECG, assim como, as variáveis mais relevantes derivam do ritmo cardíaco, como intervalos entre batimentos (*pre-RR*, *post-RR*) ou duração de ondas (*qrs_interval*).
+
+Links para download:
+- [Framingham Heart Study](https://fiapcom-my.sharepoint.com/:x:/g/personal/rm561051_fiap_com_br/ESgb8N8-8lRKuoD3Z31MmAcBAQR12jWdbxGIwcXywM2TFQ?e=DkMfpm)
+- [ECG Arrhythmia Classification Dataset](https://fiapcom-my.sharepoint.com/:u:/g/personal/rm561051_fiap_com_br/EUL5r0U5bAhOnn2__Zy3ihgBHXxoLiQowgvPyvLmaE21LA?e=FyJnjr)
+
+**Dataset de imagens:**
+
+Para suprir a necessidade de uma base de dados de imagens decidimos usar o dataset [CheXpert-v1.0-small](https://www.kaggle.com/datasets/ashery/chexpert), uma versão menor do dataset original presente no site *Standford Machine Learning Group* que contém quase 500 GB de dados de imagens.
+
+As imagens deste dataset são compostas por 224316 radiográfias (Raio X) do tórax de 65240 pacientes reais, apresentando vistas frontal e lateral. Este dataset possui rótulos de incerteza (-1: Incerto, 0: Não presente, 1: Doença presente) para cada label, assim como, um exame pode ter uma ou mais doenças detectadas (várias doenças ao mesmo tempo), portanto, o dataset é multi-label.
+
+Dentre as variáveis deste dataset, as mais importantes são as colunas que definem se o paciente tem algum tipo de doença cardíaca, sendo elas: 
+
+- *No Finding*: Nenhuma patologia encontrada no exame.
+- *Enlarged Cardiomediastinum*: Alargamento do mediastino (região central do tórax, onde ficam o coração, aorta, traqueia, etc).
+- *Cardiomegaly*: Refere-se ao aumento do tamanho do coração.
+- *Lung Opacity*: Refere-se a qualquer área mais "branca" no pulmão que indique alteração de transparência.
+- *Lung Lesion*: Refere-se a nódulos, massas ou lesões focais no pulmão.
+
+Porém, como dito anteriormente, esses rótulos não estão em *one-hot encoding*. Cada célula pode ter valores de incerteza (-1), presença (1) ou ausência (0). Para simplificar o pré-processamento, poderíamos tratar valores -1 como 0 (não presente), reduzindo a complexidade na criação do modelo de CNN. Além disso, como esse dataset é multi-label, cada paciente pode ter múltiplas condições simultaneamente, o que é importante considerar no treinamento.
+
+Link para download:
+- [[CheXpert-v1.0-small](https://fiapcom-my.sharepoint.com/:u:/g/personal/rm561051_fiap_com_br/EduH6j8yoVxFus50iMJ49HABVdVmI5VgHvKo_6zF0JNj-w?e=AJPOtx)
 
 ## 📋 Licença
 
