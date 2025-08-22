@@ -1,6 +1,5 @@
 # FIAP - Faculdade de Informática e Administração Paulista
 
-### FIAP_Heart_Disease
 
 <p align="center">
 <a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
@@ -9,7 +8,7 @@
 <br>
 
 # Nome do projeto
-Batimentos de Dados – Mapeando o Coração Moderno
+CorAI | Batimentos de Dados – Mapeando o Coração Moderno
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/bryanjfagundes/">Bryan Fagundes</a>
@@ -26,7 +25,13 @@ Batimentos de Dados – Mapeando o Coração Moderno
 
 ## 📜 Descrição
 
-Neste primeiro desafio temos como objetivo pesquisar e reunir algumas bases de dados numéricos e de imagens, assim como, artigos médicos sobre doenças cardíacas para posteriormente realizarmos a criação de modelos de Machine Learning e Aprendizado Profundo.
+O projeto CorAI: Batimentos de Dados – Mapeando o Coração Moderno tem como foco a pesquisa, coleta e organização de três tipos fundamentais de dados relacionados à saúde cardiovascular, que serão a base para o desenvolvimento de modelos avançados de Machine Learning e Aprendizado Profundo. Nesta primeira fase, o desafio é levantar e estruturar:
+
+- Dados Numéricos: Informações de pacientes cardíacos, como idade, pressão arterial, colesterol e outros indicadores clínicos essenciais.
+
+- Dados Textuais: Artigos médicos e literários que abordam saúde cardiovascular e doenças cardíacas, oferecendo insights valiosos para análises via Processamento de Linguagem Natural (NLP).
+
+- Imagens Médicas: Exames como ECGs, angiogramas e raios-X torácicos, que serão utilizados para a aplicação de técnicas de Visão Computacional com o objetivo de detectar padrões e anomalias.
 
 ## 📁 Estrutura de pastas
 
@@ -37,11 +42,54 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 📋 Descrição dos datasets reunidos
 
-**Datasets numéricos:**
+Para atender às necessidades do projeto, identificamos dois datasets numéricos que se mostram bastante interessantes:
 
-Encontramos 2 datasets que poderiam ser interessantes para suprir essa necessidade:
+**Framingham Heart Study**
 
-- [Framingham Heart Study](https://www.kaggle.com/datasets/noeyislearning/framingham-heart-study)
+Este dataset provém de um estudo cardiovascular contínuo realizado em Framingham, Massachusetts. Com dados reais de pacientes, seu principal objetivo é prever o risco de desenvolver doença cardíaca coronária (DCC) em um período de até 10 anos. Para isso, o conjunto de dados contém diversos atributos relacionados à saúde e aos hábitos dos pacientes, como se o paciente é fumante, número de cigarros consumidos diariamente, presença de diabetes, pressão arterial, colesterol total, HDL, idade, entre outros. A variável "TenYearCHD" é fundamental, pois indica o risco da ocorrência de DCC, permitindo que médicos recomendem cuidados preventivos e intervenções adequadas. [Framingham Heart Study](https://www.kaggle.com/datasets/noeyislearning/framingham-heart-study)
+
+Analise Exploratória
+
+Nesta análise exploratória inicial, focaremos nas informações sobre sexo, idade e hábitos de fumar, que são particularmente relevantes para entender a saúde cardiovascular dos participantes.
+
+1. Distribuição por Sexo
+
+A maioria dos participantes é do sexo feminino 57.08% e 42.92% do sexo masculino, isso pode introduzir um viés na análise de risco cardiovascular
+
+2. Idade
+Media de idade 49.5 anos
+- Faixa etária principal: 40-60 anos
+- Idade média próxima de 50 anos
+= Período crítico para avaliação de riscos cardiovasculares
+
+Idade Média por Status de Fumante:
+currentSmoker
+0    51.390210
+1    47.726969
+Name: age, dtype: float64
+
+Cigarros por Dia - Estatísticas por Sexo:
+       count       mean        std  min  25%   50%   75%   max
+male                                                          
+0     2405.0   5.729730   8.993534  0.0  0.0   0.0  10.0  50.0
+1     1806.0  13.368771  13.801048  0.0  0.0  15.0  20.0  70.0
+
+3. Hábitos de Fumar
+
+Proporção de fumantes vs. não fumantes
+
+Análise de cigarros por dia por sexo
+
+Relação entre idade e status de fumante
+
+A variavel sexo (male) mostra uma distribuição desbalanceada, com mais homens (1) do que mulheres (0)
+
+- Aproximadamente 60-65% homens
+- Aproximadamente 35-40% mulheres
+
+A variavel "currentSmoker", que indica se o individuo é fumante (1) e não fumante (0), mostra que a maioria dos participantes não fuma, o que é um dado positivo em termos de saúde pública. No entanto, a presença de fumantes também é significativa e deve ser considerada nas análises de risco cardiovascular.
+
+- 
 - [ECG Arrhythmia Classification Dataset](https://www.kaggle.com/datasets/sadmansakib7/ecg-arrhythmia-classification-dataset)
 
 O **1° dataset (Framingham Heart Study)** é um estudo cardiovascular em andamento em Framingham, Massachusetts. Se trata de um dataset com dados reais de pacientes e tem como objetivo realizar uma predição de risco de uma pessoa ter a doença cardíaca coronária (DCC) em até 10 anos com base em vários atributos que indicam o estado de saúde do paciente.
