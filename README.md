@@ -52,43 +52,49 @@ Analise Exploratória
 
 Nesta análise exploratória inicial, focaremos nas informações sobre sexo, idade e hábitos de fumar, que são particularmente relevantes para entender a saúde cardiovascular dos participantes.
 
-1. Distribuição da idade por Sexo
+**1. Distribuição da idade por Sexo**
    
 ![Distribuição de Idade por Sexo](framingham_heart_sexo.png)
 
-A análise mostra que a idade média dos participantes é de 49,58 anos e a maioria dos participantes é do sexo feminino 57.08% e 42.92% do sexo masculino, isso pode introduzir um viés na análise de risco cardiovascular
+Análise Demográfica e Tabagismo
 
-PAREI AQUI
+A análise inicial dos dados demográficos revela que a idade média dos participantes é de 49,58 anos. A distribuição por gênero indica uma predominância do sexo feminino, representando 57,08% da amostra, enquanto o sexo masculino corresponde a 42,92%. Essa disparidade na distribuição de gênero pode introduzir um viés nos resultados da análise de risco cardiovascular.
 
+Ao analisar a idade média em relação ao status de fumante, observamos:
 
-Idade Média por Status de Fumante:
-currentSmoker
-0    51.390210
-1    47.726969
-Name: age, dtype: float64
+- Não Fumantes: Idade média de 51,39 anos.
+- Fumantes: Idade média de 47,73 anos.
 
-Cigarros por Dia - Estatísticas por Sexo:
-       count       mean        std  min  25%   50%   75%   max
-male                                                          
-0     2405.0   5.729730   8.993534  0.0  0.0   0.0  10.0  50.0
-1     1806.0  13.368771  13.801048  0.0  0.0  15.0  20.0  70.0
+Essa diferença sugere que, em média, os fumantes no estudo são mais jovens do que os não fumantes.
 
-3. Hábitos de Fumar
+**2. Hábitos de Fumar**
 
-Proporção de fumantes vs. não fumantes
+![Proporção de Fumantes por Sexo](framingham_heart_proporcao_fumantes.png)
 
-Análise de cigarros por dia por sexo
+A análise dos dados revela a seguinte proporção de fumantes no dataset:
 
-Relação entre idade e status de fumante
+- Fumantes Ativos: 49.41%
+- Não Fumantes: 50.59%
 
-A variavel sexo (male) mostra uma distribuição desbalanceada, com mais homens (1) do que mulheres (0)
+Estes dados indicam uma distribuição equilibrada entre fumantes e não fumantes, o que é relevante para investigações sobre a influência do tabagismo na saúde cardiovascular.
 
-- Aproximadamente 60-65% homens
-- Aproximadamente 35-40% mulheres
+![Cigarros por Dia por Sexo](framingham_heart_cigarro)dia.png)
 
-A variavel "currentSmoker", que indica se o individuo é fumante (1) e não fumante (0), mostra que a maioria dos participantes não fuma, o que é um dado positivo em termos de saúde pública. No entanto, a presença de fumantes também é significativa e deve ser considerada nas análises de risco cardiovascular.
+Na análise dos dados referentes ao número de cigarros fumados por dia entre homens, os resultados se apresentam segmentados por dois grupos:
 
-- 
+Grupo feminino:  
+
+- Número de casos: 2.405
+- Média de cigarros por dia: aproximadamente 5,73
+
+Grupo masculino:  
+
+- Número de casos: 1.806
+- Média de cigarros por dia: aproximadamente 13,37
+
+Essas estatísticas fornecem uma visão detalhada do consumo de cigarros diário entre os homens, diferenciando os dois grupos, o que pode ser fundamental para análises que correlacionem o tabagismo com a saúde cardiovascular.
+
+- parei aqui
 - [ECG Arrhythmia Classification Dataset](https://www.kaggle.com/datasets/sadmansakib7/ecg-arrhythmia-classification-dataset)
 
 O **1° dataset (Framingham Heart Study)** é um estudo cardiovascular em andamento em Framingham, Massachusetts. Se trata de um dataset com dados reais de pacientes e tem como objetivo realizar uma predição de risco de uma pessoa ter a doença cardíaca coronária (DCC) em até 10 anos com base em vários atributos que indicam o estado de saúde do paciente.
