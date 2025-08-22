@@ -54,13 +54,15 @@ Nesta análise exploratória inicial, focaremos nas informações sobre sexo, id
 
 **1. Distribuição da idade por Sexo**
    
-![Distribuição de Idade por Sexo](framingham_heart_sexo.png)
-
 Análise Demográfica e Tabagismo
 
 A análise inicial dos dados demográficos revela que a idade média dos participantes é de 49,58 anos. A distribuição por gênero indica uma predominância do sexo feminino, representando 57,08% da amostra, enquanto o sexo masculino corresponde a 42,92%. Essa disparidade na distribuição de gênero pode introduzir um viés nos resultados da análise de risco cardiovascular.
 
+![Distribuição de Idade por Sexo](assets/framingham_heart_sexo.png)
+
 Ao analisar a idade média em relação ao status de fumante, observamos:
+
+![Idade Média Fumantes & Não Fumantes]( assets/framingham_heart_idade_media.png)
 
 - Não Fumantes: Idade média de 51,39 anos.
 - Fumantes: Idade média de 47,73 anos.
@@ -69,18 +71,18 @@ Essa diferença sugere que, em média, os fumantes no estudo são mais jovens do
 
 **2. Hábitos de Fumar**
 
-![Proporção de Fumantes por Sexo](framingham_heart_proporcao_fumantes.png)
-
 A análise dos dados revela a seguinte proporção de fumantes no dataset:
+
+![Proporção de Fumantes por Sexo]( assets/framingham_heart_proporcao_fumantes.png)
 
 - Fumantes Ativos: 49.41%
 - Não Fumantes: 50.59%
 
 Estes dados indicam uma distribuição equilibrada entre fumantes e não fumantes, o que é relevante para investigações sobre a influência do tabagismo na saúde cardiovascular.
 
-![Cigarros por Dia por Sexo](framingham_heart_cigarro)dia.png)
-
 Na análise dos dados referentes ao número de cigarros fumados por dia entre homens, os resultados se apresentam segmentados por dois grupos:
+
+![Cigarros por Dia por Sexo](assets/framingham_heart_cigarro_dia.png)
 
 Grupo feminino:  
 
