@@ -52,16 +52,11 @@ Analise Exploratória
 
 Nesta análise exploratória inicial, focaremos nas informações sobre sexo, idade e hábitos de fumar, que são particularmente relevantes para entender a saúde cardiovascular dos participantes.
 
-1. Distribuição por Sexo
+1. Distribuição da idade por Sexo
+![Distribuição de Idade por Sexo](framingham_heart_sexo.png)
+A análise mostra que a idade média dos participantes é de 49,58 anos e a maioria dos participantes é do sexo feminino 57.08% e 42.92% do sexo masculino, isso pode introduzir um viés na análise de risco cardiovascular
 
-A maioria dos participantes é do sexo feminino 57.08% e 42.92% do sexo masculino, isso pode introduzir um viés na análise de risco cardiovascular
-
-2. Idade
-Media de idade 49.5 anos
-- Faixa etária principal: 40-60 anos
-- Idade média próxima de 50 anos
-= Período crítico para avaliação de riscos cardiovasculares
-
+PAREI AQUI
 Idade Média por Status de Fumante:
 currentSmoker
 0    51.390210
