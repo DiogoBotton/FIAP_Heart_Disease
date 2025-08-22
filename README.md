@@ -80,23 +80,23 @@ A análise dos dados revela a seguinte proporção de fumantes no dataset:
 
 Estes dados indicam uma distribuição equilibrada entre fumantes e não fumantes, o que é relevante para investigações sobre a influência do tabagismo na saúde cardiovascular.
 
-Na análise dos dados referentes ao número de cigarros fumados por dia entre homens, os resultados se apresentam segmentados por dois grupos:
+Na análise dos dados referentes ao número de cigarros fumados por dia, os resultados se apresentam segmentados abaixo:
 
 ![Cigarros por Dia por Sexo](assets/framingham_heart_cigarro_dia.png)
 
 Grupo feminino:  
-
 - Número de casos: 2.405
 - Média de cigarros por dia: aproximadamente 5,73
 
 Grupo masculino:  
-
 - Número de casos: 1.806
 - Média de cigarros por dia: aproximadamente 13,37
 
-Essas estatísticas fornecem uma visão detalhada do consumo de cigarros diário entre os homens, diferenciando os dois grupos, o que pode ser fundamental para análises que correlacionem o tabagismo com a saúde cardiovascular.
+Essas estatísticas fornecem uma visão detalhada do consumo de cigarros diário entre os sexos que pode ser fundamental para análises que correlacionem o tabagismo com a saúde cardiovascular.
 
 - parei aqui
+
+- 
 - [ECG Arrhythmia Classification Dataset](https://www.kaggle.com/datasets/sadmansakib7/ecg-arrhythmia-classification-dataset)
 
 O **1° dataset (Framingham Heart Study)** é um estudo cardiovascular em andamento em Framingham, Massachusetts. Se trata de um dataset com dados reais de pacientes e tem como objetivo realizar uma predição de risco de uma pessoa ter a doença cardíaca coronária (DCC) em até 10 anos com base em vários atributos que indicam o estado de saúde do paciente.
