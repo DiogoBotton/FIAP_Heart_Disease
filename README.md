@@ -130,6 +130,77 @@ Porém, como dito anteriormente, esses rótulos não estão em *one-hot encoding
 Link para download:
 - [CheXpert-v1.0-small](https://fiapcom-my.sharepoint.com/:u:/g/personal/rm561051_fiap_com_br/EduH6j8yoVxFus50iMJ49HABVdVmI5VgHvKo_6zF0JNj-w?e=AJPOtx)
 
+
+## 📋 Descrição dos artigos
+
+**Revisão Bibliográfica: O Cenário das Doenças Cardiovasculares no Brasil**
+
+**Introdução**
+As doenças cardiovasculares (DCV) representam a principal causa de mortalidade no Brasil, impondo uma carga significativa sobre o sistema de saúde e a sociedade. Compreender a epidemiologia, o impacto econômico e as estratégias adotadas é fundamental para aprimorar as políticas de saúde pública. Esta revisão bibliográfica tem como objetivo sintetizar os achados mais relevantes de artigos e documentos publicados nos últimos cinco anos, abordando o panorama geral das DCV, sua relação com o Sistema Único de Saúde (SUS) e os avanços nos tratamentos. A análise se baseia em fontes oficiais e acadêmicas para traçar um quadro atualizado e preciso da situação no país.
+
+**Metodologia**
+A presente revisão é uma síntese narrativa de literatura, construída a partir da análise de documentos e artigos-chave publicados entre 2020 e 2024. As fontes consultadas incluem:
+
+- Bases de dados acadêmicas, com ênfase na SciELO, que publica as estatísticas cardiovasculares anuais da Sociedade Brasileira de Cardiologia (SBC);
+- Publicações oficiais do Ministério da Saúde e documentos do Sistema Único de Saúde (SUS), que detalham diretrizes e estratégias de atenção à saúde;
+- Artigos de jornais e revistas especializadas que abordam a epidemiologia e o impacto econômico das DCV no Brasil.
+
+A seleção dos materiais se concentrou em documentos que oferecem dados robustos, estatísticas oficiais e diretrizes para a prática clínica e a gestão em saúde pública. Para uma visualização clara das fontes utilizadas, a tabela a seguir resume os principais documentos, seus anos de publicação e temas abordados.
+
+| Fonte | Título / Nome do Documento | Ano de Publicação | Tema Principal |
+| :--- | :--- | :--- | :--- |
+| SciELO / SBC | Estatística Cardiovascular – Brasil 2021 | 2021 | Epidemiologia, mortalidade e prevalência de DCV |
+| SciELO / SBC | Estatística Cardiovascular – Brasil 2023 | 2023 | Dados atualizados de mortalidade, impacto da COVID-19 |
+| SciELO | Impacto econômico dos casos de doença cardiovascular grave no Brasil | 2022 | Análise de custos diretos e indiretos das DCV |
+| Ministério da Saúde (SUS) | Estratégia de Saúde Cardiovascular na Atenção Primária | 2022 | Diretrizes e políticas de prevenção e manejo na atenção primária |
+| Sociedade Brasileira de Cardiologia | Estatísticas Cardiovasculares 2023 | 2023 | Análise do gasto do SUS com procedimentos cardiovasculares |
+| BJHS | Epidemiologia das Internações por Insuficiência Cardíaca no Brasil | 2024 | Análise de tendências de internação por insuficiência cardíaca |
+
+**Principais Achados**
+
+**1.Epidemiologia e Impacto na Saúde Pública**
+
+As Estatísticas Cardiovasculares publicadas anualmente pela SBC apontam que a doença arterial coronariana e o acidente vascular cerebral continuam sendo as principais causas de morte no Brasil. Embora a prevalência de DCV esteja em crescimento, impulsionada pelo envelhecimento da população, a taxa de mortalidade padronizada por idade tem apresentado uma leve redução, sugerindo uma melhora na qualidade dos cuidados.
+
+O impacto financeiro das DCV é notável. Dados do SUS indicam que o gasto anual com procedimentos cardiovasculares ultrapassa a cifra de R$ 1 bilhão. O impacto da pandemia de COVID-19 também foi evidenciado, com uma redução inicial nas hospitalizações por algumas condições crônicas, seguida por um aumento da prevalência de fatores de risco como a hipertensão em determinadas regiões.
+
+**2.O Papel do SUS e a Atenção Primária**
+
+O SUS é o pilar no enfrentamento das DCV. Documentos do Ministério da Saúde, como a Estratégia de Saúde Cardiovascular na Atenção Primária, reforçam a importância da prevenção e do controle de fatores de risco como hipertensão, diabetes e dislipidemia. A atenção primária é vista como a porta de entrada e a principal ferramenta para a detecção precoce e o manejo inicial, evitando a progressão das doenças e a necessidade de procedimentos de alta complexidade.
+
+A análise de dados do SUS revela um aumento de mais de 50% nas internações por infarto agudo do miocárdio na última década, refletindo a alta carga da doença. Em contrapartida, houve uma redução nas hospitalizações por insuficiência cardíaca, o que pode indicar um melhor manejo da condição.
+
+**3.Avanços em Tratamentos e Prognóstico**
+   
+O cenário do tratamento das DCV tem apresentado avanços, principalmente no ambiente hospitalar. O aumento significativo no número de intervenções coronarianas percutâneas (ICP) primárias é um dos indicadores mais importantes, refletindo a ampliação do acesso a tratamentos de alta complexidade.
+
+Apesar do aumento no volume de procedimentos, a taxa de mortalidade hospitalar por infarto agudo do miocárdio tem diminuído. Este dado sugere uma melhoria na qualidade do atendimento de emergência e no manejo clínico, resultando em um prognóstico mais favorável para os pacientes. O perfil dos pacientes em hospitais públicos, predominantemente homens e com múltiplos fatores de risco, reforça a necessidade contínua de estratégias preventivas e de educação em saúde.
+
+
+**Potencial de Análise dos Textos por Algoritmos de Processamento de Linguagem Natural (NLP)**
+
+A exploração desses textos por algoritmos de NLP é crucial para projetos de Inteligência Artificial na área da saúde. Os documentos, repletos de informações não-estruturadas, podem ser transformados em dados valiosos e acionáveis.
+
+**Como usar os algoritmos de NLP**
+
+**Análise de Sentimentos:** A análise de sentimento pode ser aplicada para avaliar o tom de relatórios oficiais ou o sentimento expresso em documentos de resposta pública. Por exemplo, a IA pode classificar a percepção geral sobre o sucesso de um programa de prevenção cardiovascular como "otimista" ou "cautelosa", ajudando a entender a visão dos profissionais e gestores sobre as políticas adotadas.
+
+**Extração de Sintomas e Entidades Clínicas:** Algoritmos de extração de informação (como a Extração de Entidades Nomeadas) conseguem rastrear os textos para identificar automaticamente sintomas (ex: dor no peito, falta de ar), doenças (ex: hipertensão, diabetes), e tratamentos (ex: ICP, angioplastia). Essa técnica permite criar um banco de dados estruturado a partir de relatórios e artigos extensos.
+
+**Classificação de Tópicos:** Uma das aplicações mais diretas é a classificação de documentos. Os textos podem ser categorizados em temas como "Custo para o SUS," "Tendências de Mortalidade," ou "Estratégias de Prevenção." Essa classificação automática facilita a organização e a busca em grandes repositórios de literatura médica, permitindo que pesquisadores e gestores encontrem rapidamente o que precisam.
+
+**Relevância dessas análises para um projeto de IA na saúde**
+
+Essas análises são a base para a criação de sistemas inteligentes que podem gerar insights em larga escala. A relevância reside em:
+
+**Escalabilidade e Eficiência:** A leitura e análise manual de milhares de relatórios e artigos é inviável. Algoritmos de NLP podem processar essa massa de dados em minutos, revelando padrões e tendências que seriam impossíveis de detectar manualmente.
+
+**Apoio à Tomada de Decisão:** Os dados extraídos podem alimentar painéis de controle para gestores de saúde, alertando sobre o aumento de um sintoma específico em relatórios de diferentes hospitais ou identificando quais estratégias de tratamento estão sendo mais discutidas e associadas a melhores resultados.
+
+**Previsão e Planejamento:** Ao correlacionar a extração de sintomas com dados de internação, um modelo de IA pode prever a demanda futura por leitos ou equipamentos em certas regiões. A análise de sentimentos e a classificação de tópicos podem ajudar a otimizar a alocação de recursos financeiros para as áreas mais críticas da saúde pública.
+
+A Inteligencia Artificial, usando o Processamento de Linguagem Natural (NLP), pode transformar textos em inteligência estratégica. Além de organizar as informações, ela as utiliza para criar modelos preditivos e sistemas de suporte à decisão. Em última análise, essa tecnologia pode ajudar a salvar vidas e a otimizar a gestão do sistema de saúde.
+
 ## 📋 Licença
 
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
