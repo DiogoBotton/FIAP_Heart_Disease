@@ -102,48 +102,45 @@ Dentre as variáveis deste dataset, a coluna *"type"* contém a informação do 
 
 **Analise Exploratória**
 
-Nesta análise exploratória inicial, focaremos nas informações sobre XPTO
+Nesta análise exploratória inicial, avaliaremos a variavel alvo  *type* e as variaveis de interesse *pre-RR*, *post-RR*, *pPeak*, *qrs_interval*, *qt_interval*, *rPeak*, *sPeak*, *tPeak*
 
 A análise da variável-alvo *type* é crucial para este projeto, pois ela define o tipo de batimento cardíaco, permitindo a classificação de arritmias. A distribuição de classes do dataset é altamente desbalanceada.
 
-![Distribuição por tipo de batimento cardíaco](assets/arritmias_distribuicao_batimentos_cardiacos.png)
+![Distribuição de batimento cardíacos](assets/arritmias_distribuicao_batimentos_cardiacos.png)
 
 - Classe Majoritária: A classe N (Normal) domina, representando mais de 91% dos dados.
 - Classes Minoritárias: As arritmias VEB e SVEB são minoritárias, enquanto Q e F são extremamente raras, com menos de 1% do total.
 
 Esse desequilíbrio é um desafio crítico, pois caso não seja tratado, o modelo pode alcançar uma acurácia alta, mas falhar em detectar as arritmias mais importantes e raras.
 
-*Próximos passos:*
+As estatísticas descritivas para as variáveis de interesse *pre-RR*, *post-RR*, *pPeak*, *qrs_interval*, *qt_interval*, *rPeak*, *sPeak* e *tPeak* revelam uma ampla gama de valores. É notável a presença de outliers em quase todas as características, especialmente nos intervalos de batimento (pre-RR e post-RR) e nos intervalos morfológicos (qrs_interval e qt_interval). A identificação desses valores extremos é crucial para o pré-processamento de dados e para o desenvolvimento de um modelo robusto, pois podem influenciar negativamente o treinamento e a capacidade de generalização do modelo se não forem tratados adequadamente.
 
-- Balanceamento de Dados: Utilizar técnicas como Oversampling (ex: SMOTE) para aumentar as classes minoritárias ou Undersampling para reduzir a classe majoritária.
-- Métricas de Avaliação: Avaliar o modelo com métricas como F1-Score, Precisão e Recall, que são mais confiáveis para datasets desbalanceados do que a acurácia.
-
-Variáveis de interesse PAREI AQUI
-
-Intervalos pre-RR e post-RR:
-
+**Intervalos pre-RR e post-RR**
 Derivação 0 (0_pre-RR, 0_post-RR): A mediana é de 202, e 75% dos valores estão abaixo de 258. No entanto, os valores máximos atingem 2228 e 10964, respectivamente. Essa enorme diferença indica que existem batimentos com intervalos extremamente longos, que podem ser sinal de ritmos cardíacos muito lentos ou falhas na medição.
 
 Derivação 1 (1_pre-RR, 1_post-RR): O mesmo padrão é observado, com medianas de 185 e 238 no 75º percentil, mas valores máximos de 3666 e 10964. Isso reforça a presença de valores atípicos em ambas as derivações.
 
-Picos de Onda (pPeak, rPeak, sPeak, tPeak):
+**Picos de Onda (pPeak, rPeak, sPeak, tPeak)**
 
 As medianas e o 75º percentil para os picos de onda (tanto para as derivações 0 quanto 1) estão em faixas esperadas. No entanto, os valores máximos são consideravelmente mais altos, o que pode indicar anomalias na amplitude do sinal de ECG ou ruído.
 
 É notável que o 1_rPeak e o 1_sPeak têm medianas negativas, o que é clinicamente plausível, já que o sinal de ECG pode ter deflexões para baixo dependendo da derivação.
 
-Intervalos Morfológicos (qrs_interval, qt_interval):
+**Intervalos Morfológicos (qrs_interval, qt_interval)**
 
-0_qrs_interval: A mediana é 16 e 75% dos valores estão abaixo de 26, mas o máximo é 232. Um QRS prolongado é um forte indicador de arritmia ventricular, e o valor máximo sugere a presença desses casos.
+- 0_qrs_interval: A mediana é 16 e 75% dos valores estão abaixo de 26, mas o máximo é 232. Um QRS prolongado é um forte indicador de arritmia ventricular, e o valor máximo sugere a presença desses casos.
+- 1_qrs_interval: A mediana é 5 e o 75º percentil é 11, mas o valor máximo chega a 260. A diferença entre as medianas das duas derivações (16 vs. 5) é significativa e deve ser investigada.
 
-1_qrs_interval: A mediana é 5 e o 75º percentil é 11, mas o valor máximo chega a 260. A diferença entre as medianas das duas derivações (16 vs. 5) é significativa e deve ser investigada.
+**Heatmap**
 
-Conclusão
-As estatísticas descritivas revelam que o dataset contém uma ampla gama de valores, com uma notável presença de outliers em quase todas as características, especialmente nos intervalos de batimento (pre-RR e post-RR) e nos intervalos morfológicos (qrs_interval e qt_interval). A identificação desses valores extremos é crucial para o pré-processamento de dados e para o desenvolvimento de um modelo robusto, pois podem influenciar negativamente o treinamento e a capacidade de generalização do modelo se não forem tratados adequadamente.
+![Heatmap](assets/arritmias_heatmap.png)
 
+O fato de 0_pre-RR e 1_pre-RR (e também 0_qrs_interval e 1_qrs_interval) apresentarem uma forte correlação no mapa de calor é um dos principais achados da análise. Essa alta correlação é, de fato, esperada, já que ambas as derivações medem o mesmo evento (o tempo entre batimentos e a duração do complexo QRS) em duas perspectivas diferentes.
 
+**Próximos passos:**
 
-
+- Balanceamento de Dados: Utilizar técnicas como Oversampling (ex: SMOTE) para aumentar as classes minoritárias ou Undersampling para reduzir a classe majoritária.
+- Métricas de Avaliação: Avaliar o modelo com métricas como F1-Score, Precisão e Recall, que são mais confiáveis para datasets desbalanceados do que a acurácia.
 
 Links para download:
 - [Framingham Heart Study](https://fiapcom-my.sharepoint.com/:x:/g/personal/rm561051_fiap_com_br/ESgb8N8-8lRKuoD3Z31MmAcBAQR12jWdbxGIwcXywM2TFQ?e=DkMfpm)
