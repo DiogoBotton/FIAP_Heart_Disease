@@ -135,7 +135,7 @@ As medianas e o 75º percentil para os picos de onda (tanto para as derivações
 
 ![Heatmap](assets/arritmias_heatmap.png)
 
-O fato de 0_pre-RR e 1_pre-RR (e também 0_qrs_interval e 1_qrs_interval) apresentarem uma forte correlação no mapa de calor é um dos principais achados da análise. Essa alta correlação é, de fato, esperada, já que ambas as derivações medem o mesmo evento (o tempo entre batimentos e a duração do complexo QRS) em duas perspectivas diferentes.
+O fato de 0_pre-RR e 1_pre-RR e também 0_qrs_interval e 1_qrs_interval apresentarem uma forte correlação no mapa de calor é um dos principais achados da análise. Essa alta correlação é, de fato, esperada, já que ambas as derivações medem o mesmo evento (o tempo entre batimentos e a duração do complexo QRS) em duas perspectivas diferentes.
 
 **Próximos passos:**
 
